@@ -139,5 +139,9 @@
         "prettier": "^2.8.7",
         "react-error-overlay": "6.0.11",
         "sass": "^1.63.6"
-    }
+    },
+    "main": "index.js",
+    "repository": "git@github.com:ItaloMontes/lookplus-react-material.git",
+    "author": "ItaloMontes <italo.montes@gmail.com>",
+    "license": "MIT"
 }
