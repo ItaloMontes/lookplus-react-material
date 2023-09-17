@@ -1,8 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 // project imports
+
 import { dispatch } from '../index';
-import axios from 'utils/axios';
+
+// import axios from 'utils/axios';
+import axios from 'utils/axiosDummy';
 
 // initial state
 const initialState = {
@@ -50,8 +53,10 @@ export const { activeItem, openDrawer, activeID } = menu.actions;
 export function getMenu() {
     return async () => {
         try {
-            const response = await axios.get('/api/menu/widget');
+            const response = await axios.get('/json/menuAdministradorAdministracion.json'); 
+            // const response = await axios.get('/api/menu/widget');
             dispatch(menu.actions.getMenuSuccess(response.data.widget));
+
         } catch (error) {
             dispatch(menu.actions.hasError(error));
         }

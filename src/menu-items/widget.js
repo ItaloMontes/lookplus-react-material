@@ -23,7 +23,7 @@ export const Menu = () => {
         subChildrenLis?.map((subList) => ({
             ...subList,
             title: <FormattedMessage id={`${subList.title}`} />,
-            icon: icons[subList.icon]
+            //icon: icons[subList.icon]
         }));
 
     const menuItem = (subList) => {

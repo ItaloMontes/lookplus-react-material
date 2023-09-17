@@ -1,0 +1,40 @@
+{
+   "widget":{
+      "id":"widget",
+      "title":"Administracion",
+      "type":"group",
+      "icon":"widget",
+      "children":[
+         {
+            "id":"Planes",
+            "title":"Planes",
+            "type":"collapse",
+            "icon":"statistics",
+            "url":"/widget/statistics",
+            "children":[
+              {
+                 "id":"Crud de planes",
+                 "title":"Crud de planes",
+                 "type":"item",
+                 "icon":"statistics",
+                 "url":"/widget/statistics"
+              },
+              {
+                 "id":"Planes especiales",
+                 "title":"Planes especiales",
+                 "type":"item",
+                 "icon":"data",
+                 "url":"/widget/data"
+              },
+              {
+                 "id":"chartJSON",
+                 "title":"chart",
+                 "type":"item",
+                 "icon":"chart",
+                 "url":"/widget/chart"
+              }
+           ]
+         }
+      ]
+   }
+}
