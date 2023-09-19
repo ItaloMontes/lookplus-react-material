@@ -10,6 +10,11 @@ import other from './other';
 
 import perfil1Administracion from './perfil1Administracion';
 import perfil1Ajustes from './perfil1Ajustes';
+import perfil2Administracion from './perfil2Administracion';
+import perfil2Agenda from './perfil2Agenda';
+import perfil2Informes from './perfil2Informes';
+import perfil3Agenda from './perfil3Agenda';
+import perfil3Informes from './perfil3Informes';
 import configDummy from 'utils/locales/configDummy.json';
 
 // ==============================|| MENU ITEMS ||============================== //
@@ -25,12 +30,12 @@ switch(configDummy.perfil.tipoPerfil) {
       break;
     case "2":
         menuItemsAux = {
-            items: [dashboard]
+            items: [perfil2Administracion, perfil2Agenda, perfil2Informes]
         };
       break;
       case "3":
         menuItemsAux = {
-            items: [dashboard, application, forms, elements, samplePage, pages, utilities, support, other]
+            items: [perfil3Agenda, perfil3Informes]
         };
       break;
     default:

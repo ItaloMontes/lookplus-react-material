@@ -1,8 +1,8 @@
 // assets
-import { IconDashboard} from '@tabler/icons';
+import { IconDashboard, IconPackage, IconBuildingWarehouse, IconAffiliate, IconCheckupList} from '@tabler/icons';
 
 const icons = {
-    IconDashboard    
+    IconDashboard, IconPackage,IconBuildingWarehouse, IconAffiliate, IconCheckupList   
 };
 
 // ==============================|| MENU ITEMS - perfil1Administracion ||============================== //
@@ -17,7 +17,7 @@ const perfil1Administracion = {
             id: 'planes',
             title: 'Planes',
             type: 'collapse',
-            icon: icons.IconDashboard,
+            icon: icons.IconPackage,
             children: [
                 {
                     id: 'administrarPlanes',
@@ -38,7 +38,7 @@ const perfil1Administracion = {
             title: 'Instituciones',
             type: 'collapse',
             url: '/sample-page',
-            icon: icons.IconDashboard,
+            icon: icons.IconBuildingWarehouse,
             children: [
                 {
                     id: 'creacion',
@@ -76,7 +76,7 @@ const perfil1Administracion = {
             title: 'Servicios',
             type: 'collapse',
             url: '/sample-page',
-            icon: icons.IconDashboard,
+            icon: icons.IconAffiliate,
             children: [
                 {
                     id: 'gestionServicios',
@@ -92,7 +92,7 @@ const perfil1Administracion = {
             title: 'Gestion',
             type: 'collapse',
             url: '/sample-page',
-            icon: icons.IconDashboard,
+            icon: icons.IconCheckupList,
             children: [
                 {
                     id: 'pagos',

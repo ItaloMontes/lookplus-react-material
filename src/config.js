@@ -2,7 +2,7 @@ import LAYOUT_CONST from 'constant';
 
 import configDummy from 'utils/locales/configDummy.json';
 var dashBoardPathAux = null;
-console.log(dashBoardPathAux);
+
 switch(configDummy.perfil.tipoPerfil) {
     case "1":
         dashBoardPathAux = '/utils/util-typography';
@@ -16,8 +16,6 @@ switch(configDummy.perfil.tipoPerfil) {
     default:
         dashBoardPathAux = '/dashboard/default';
   }
-  console.log(dashBoardPathAux);
-
 
 export const DASHBOARD_PATH = dashBoardPathAux;
 export const HORIZONTAL_MAX_ITEM = 7;

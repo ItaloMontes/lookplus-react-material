@@ -1,8 +1,8 @@
 // assets
-import { IconDashboard} from '@tabler/icons';
+import { IconDashboard, IconShieldLock, IconUsers} from '@tabler/icons';
 
 const icons = {
-    IconDashboard    
+    IconDashboard, IconShieldLock, IconUsers    
 };
 
 // ==============================|| MENU ITEMS - perfil1Ajustes ||============================== //
@@ -17,7 +17,7 @@ const perfil1Ajustes = {
             id: 'seguridad',
             title: 'Seguridad',
             type: 'collapse',
-            icon: icons.IconDashboard,
+            icon: icons.IconShieldLock,
             children: [
                 {
                     id: 'perfiles',
@@ -38,7 +38,7 @@ const perfil1Ajustes = {
             title: 'Usuarios',
             type: 'collapse',
             url: '/sample-page',
-            icon: icons.IconDashboard,
+            icon: icons.IconUsers,
             children: [
                 {
                     id: 'administracion',
