@@ -1,6 +1,25 @@
 import LAYOUT_CONST from 'constant';
 
-export const DASHBOARD_PATH = '/dashboard/default';
+import configDummy from 'utils/locales/configDummy.json';
+var dashBoardPathAux = null;
+console.log(dashBoardPathAux);
+switch(configDummy.perfil.tipoPerfil) {
+    case "1":
+        dashBoardPathAux = '/utils/util-typography';
+      break;
+    case "2":
+        dashBoardPathAux = '/advance/snackbar';
+      break;
+      case "3":
+        dashBoardPathAux = '/basic/accordion';
+      break;
+    default:
+        dashBoardPathAux = '/dashboard/default';
+  }
+  console.log(dashBoardPathAux);
+
+
+export const DASHBOARD_PATH = dashBoardPathAux;
 export const HORIZONTAL_MAX_ITEM = 7;
 
 const config = {
