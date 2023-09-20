@@ -5,7 +5,7 @@ const icons = {
     IconDashboard, IconNotebook, IconCalendarTime    
 };
 
-// ==============================|| MENU ITEMS - perfil1Agenda ||============================== //
+// ==============================|| MENU ITEMS - perfil3Agenda ||============================== //
 
 const perfil3Agenda = {
     id: 'perfil3Agenda',

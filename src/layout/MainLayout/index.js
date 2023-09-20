@@ -9,7 +9,7 @@ import { AppBar, Box, Container, CssBaseline, Toolbar, useMediaQuery } from '@mu
 import Header from './Header';
 import Sidebar from './Sidebar';
 import HorizontalBar from './HorizontalBar';
-import Customization from '../Customization';
+// import Customization from '../Customization';
 import Breadcrumbs from 'ui-component/extended/Breadcrumbs';
 
 import navigation from 'menu-items';
@@ -86,21 +86,21 @@ const MainLayout = () => {
         } else {
             dispatch(openDrawer(false));
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [drawerType]);
 
     useEffect(() => {
         if (drawerType === LAYOUT_CONST.DEFAULT_DRAWER) {
             dispatch(openDrawer(true));
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     useEffect(() => {
         if (matchDownMd) {
             dispatch(openDrawer(true));
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [matchDownMd]);
 
     const condition = layout === LAYOUT_CONST.HORIZONTAL_LAYOUT && !matchDownMd;
@@ -111,7 +111,7 @@ const MainLayout = () => {
                 <Header />
             </Toolbar>
         ),
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
         [layout, matchDownMd]
     );
 
@@ -137,7 +137,7 @@ const MainLayout = () => {
                     <Outlet />
                 </Container>
             </Main>
-            <Customization />
+            {/* <Customization /> */}
         </Box>
     );
 };

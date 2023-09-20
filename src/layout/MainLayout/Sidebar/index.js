@@ -45,12 +45,12 @@ const Sidebar = () => {
     const drawerContent = (
         <>
             <MenuList />
-            {layout === LAYOUT_CONST.VERTICAL_LAYOUT && drawerOpen && <MenuCard />}
+            {/* {layout === LAYOUT_CONST.VERTICAL_LAYOUT && drawerOpen && <MenuCard />}
             {layout === LAYOUT_CONST.VERTICAL_LAYOUT && drawerOpen && (
                 <Stack direction="row" justifyContent="center" sx={{ mb: 2 }}>
                     <Chip label={process.env.REACT_APP_VERSION} disabled chipcolor="secondary" size="small" sx={{ cursor: 'pointer' }} />
                 </Stack>
-            )}
+            )} */}
         </>
     );
 
@@ -78,7 +78,7 @@ const Sidebar = () => {
                 )}
             </>
         ),
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
         [matchUpMd, drawerOpen, drawerType]
     );
 
