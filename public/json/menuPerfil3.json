@@ -1,0 +1,51 @@
+{
+   "widget":{
+      "id":"widget",
+      "title":"",
+      "type":"group",
+      "children":[
+         {
+            "id":"gestion",
+            "title":"Gestion",
+            "type":"collapse",
+            "icon":"IconNotebook",
+            "url":"/widget/statistics",
+            "children":[
+              {
+                 "id":"creacionAgenda",
+                 "title":"Creacion de Agenda",
+                 "type":"item",
+                 "url":"/widget/statistics"
+              },
+              {
+               "id":"administracionSillas",
+               "title":"Administracion Sillas",
+               "type":"item",
+               "url":"/widget/statistics"
+            }
+           ]
+         },
+         {
+            "id":"agenda",
+            "title":"Agenda",
+            "type":"collapse",
+            "icon":"IconReportAnalytics",
+            "url":"/widget/statistics",
+            "children":[
+              {
+                 "id":"reservas",
+                 "title":"Reservas",
+                 "type":"item",
+                 "url":"/widget/statistics"
+              },
+              {
+               "id":"pagos",
+               "title":"Pagos",
+               "type":"item",
+               "url":"/widget/statistics"
+              }
+           ]
+         }
+      ]
+   }
+}

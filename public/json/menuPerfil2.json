@@ -1,0 +1,114 @@
+{
+   "widget":{
+      "id":"widget",
+      "title":"",
+      "type":"group",
+      "children":[
+         {
+            "id":"locales",
+            "title":"Locales",
+            "type":"collapse",
+            "icon":"IconBuildingStore",
+            "url":"/widget/statistics",
+            "children":[
+              {
+                 "id":"informacionGeneral",
+                 "title":"Informacion General",
+                 "type":"item",
+                 "url":"/widget/statistics"
+              },
+              {
+                 "id":"imagenes",
+                 "title":"Imagenes",
+                 "type":"item",
+                 "url":"/widget/data"
+              }
+           ]
+         },
+         {
+            "id":"sillasFuncionarios",
+            "title":"Sillas - Funcionarios",
+            "type":"collapse",
+            "icon":"IconArmchair2",
+            "url":"/widget/statistics",
+            "children":[
+              {
+                 "id":"gestionFuncionarios",
+                 "title":"Gestion Funcionarios",
+                 "type":"item",
+                 "url":"/widget/statistics"
+              },
+              {
+                 "id":"gestionSillas",
+                 "title":"Gestion Sillas",
+                 "type":"item",
+                 "url":"/widget/data"
+              }
+           ]
+         },
+         {
+            "id":"gestion",
+            "title":"Gestion",
+            "type":"collapse",
+            "icon":"IconNotebook",
+            "url":"/widget/statistics",
+            "children":[
+              {
+                 "id":"creacionAgenda",
+                 "title":"Creacion de Agenda",
+                 "type":"item",
+                 "url":"/widget/statistics"
+              },
+              {
+               "id":"administracionSillas",
+               "title":"Administracion Sillas",
+               "type":"item",
+               "url":"/widget/statistics"
+            }
+           ]
+         },
+         {
+            "id":"reservas",
+            "title":"Reservas",
+            "type":"collapse",
+            "icon":"IconCalendarTime",
+            "url":"/widget/statistics",
+            "children":[
+              {
+                 "id":"gestionReservas",
+                 "title":"Gestion de Reservas",
+                 "type":"item",
+                 "url":"/widget/statistics"
+              },
+              {
+               "id":"cerrarReserva",
+               "title":"Cerrar Reserva",
+               "type":"item",
+               "url":"/widget/statistics"
+            }
+           ]
+         },
+         {
+            "id":"agenda",
+            "title":"Agenda",
+            "type":"collapse",
+            "icon":"IconReportAnalytics",
+            "url":"/widget/statistics",
+            "children":[
+              {
+                 "id":"reservas",
+                 "title":"Reservas",
+                 "type":"item",
+                 "url":"/widget/statistics"
+              },
+              {
+               "id":"pagos",
+               "title":"Pagos",
+               "type":"item",
+               "url":"/widget/statistics"
+              }
+           ]
+         }
+      ]
+   }
+}

@@ -16,6 +16,10 @@ const initialState = {
     menu: {}
 };
 
+//Obtener ruta json del menu
+import configDummy from 'utils/locales/configDummy.json';
+var urlJson = null;
+
 // ==============================|| SLICE - MENU ||============================== //
 
 const menu = createSlice({
@@ -53,8 +57,27 @@ export const { activeItem, openDrawer, activeID } = menu.actions;
 export function getMenu() {
     return async () => {
         try {
-            const response = await axios.get('/json/menuAdministradorAdministracion.json'); 
-            // const response = await axios.get('/api/menu/widget');
+
+
+            
+            switch(configDummy.perfil.tipoPerfil) {
+                case "1":
+                    urlJson = '/json/menuPerfil1.json';
+                  break;
+                case "2":
+                    urlJson = '/json/menuPerfil2.json';
+                  break;
+                  case "3":
+                    urlJson = '/json/menuPerfil3.json';
+                  break;
+                default:
+                    urlJson = '/json/menuPerfil3.json';
+              }
+
+
+
+            const response = await axios.get(urlJson); 
+            //const response = await axios.get('/api/menu/widget');
             dispatch(menu.actions.getMenuSuccess(response.data.widget));
 
         } catch (error) {

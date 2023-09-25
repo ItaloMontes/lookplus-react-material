@@ -40,12 +40,14 @@ const ForgotPassword = () => {
                                                     gutterBottom
                                                     variant={matchDownSM ? 'h3' : 'h2'}
                                                 >
-                                                    Forgot password?
+                                                    {/* Forgot password? */}
+                                                    Olvidaste tu contraseña?
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={12}>
                                                 <Typography variant="caption" fontSize="16px" textAlign="center">
-                                                    Enter your email address below and we&apos;ll send you password reset OTP.
+                                                    {/* Enter your email address below and we&apos;ll send you password reset OTP. */}
+                                                    Ingresa la direccion de correo de tu cuenta para resetear la contraseña.
                                                 </Typography>
                                             </Grid>
                                         </Grid>
@@ -64,7 +66,8 @@ const ForgotPassword = () => {
                                                 variant="subtitle1"
                                                 sx={{ textDecoration: 'none' }}
                                             >
-                                                Already have an account?
+                                                {/* Already have an account? */}
+                                                uya tienes una cuenta?
                                             </Typography>
                                         </Grid>
                                     </Grid>

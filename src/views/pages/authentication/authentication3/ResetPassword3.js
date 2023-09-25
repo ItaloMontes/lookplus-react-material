@@ -46,14 +46,16 @@ const ResetPassword = () => {
                                                         gutterBottom
                                                         variant={matchDownSM ? 'h3' : 'h2'}
                                                     >
-                                                        Reset Password
+                                                        {/* Reset Password */}
+                                                        Resetea la contraseña
                                                     </Typography>
                                                     <Typography
                                                         variant="caption"
                                                         fontSize="16px"
                                                         textAlign={matchDownSM ? 'center' : 'inherit'}
                                                     >
-                                                        Please choose your new password
+                                                        {/* Please choose your new password */}
+                                                        Por favor ingresa una nueva contraseña
                                                     </Typography>
                                                 </Stack>
                                             </Grid>

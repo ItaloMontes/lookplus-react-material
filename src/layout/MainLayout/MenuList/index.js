@@ -10,7 +10,7 @@ import menuItem from 'menu-items';
 import NavGroup from './NavGroup';
 
 import useConfig from 'hooks/useConfig';
-//import { Menu } from 'menu-items/widget';
+import { Menu } from 'menu-items/widget';
 
 import LAYOUT_CONST from 'constant';
 import { HORIZONTAL_MAX_ITEM } from 'config';
@@ -24,7 +24,7 @@ const MenuList = () => {
     const { drawerOpen } = useSelector((state) => state.menu);
     const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
 
-    //const getMenu = Menu();
+    const getMenu = Menu();
     const handlerMenuItem = () => {
         const isFound = menuItem.items.some((element) => {
             if (element.id === 'widget') {
@@ -33,14 +33,14 @@ const MenuList = () => {
             return false;
         });
 
-        // if (getMenu?.id !== undefined && !isFound) {
-        //     menuItem.items.splice(1, 0, getMenu);
-        // }
+        if (getMenu?.id !== undefined && !isFound) {
+              menuItem.items.splice(0, 0, getMenu);
+        }
     };
 
     useEffect(() => {
         handlerMenuItem();
-        // eslint-disable-next-line
+
     }, []);
 
     // last menu-item to show in horizontal menu bar

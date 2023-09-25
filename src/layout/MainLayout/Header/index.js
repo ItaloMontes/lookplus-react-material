@@ -46,7 +46,48 @@ const Header = () => {
                     <LogoSection />
                 </Box>
 
-                {layout === LAYOUT_CONST.VERTICAL_LAYOUT || (layout === LAYOUT_CONST.HORIZONTAL_LAYOUT && matchDownMd) ? (
+                {/* {layout === LAYOUT_CONST.VERTICAL_LAYOUT || (layout === LAYOUT_CONST.HORIZONTAL_LAYOUT && matchDownMd) ? (
+                    <Avatar
+                        variant="rounded"
+                        sx={{
+                            ...theme.typography.commonAvatar,
+                            ...theme.typography.mediumAvatar,
+                            overflow: 'hidden',
+                            transition: 'all .2s ease-in-out',
+                            background: theme.palette.mode === 'dark' ? theme.palette.dark.main : theme.palette.secondary.light,
+                            color: theme.palette.mode === 'dark' ? theme.palette.secondary.main : theme.palette.secondary.dark,
+                            '&:hover': {
+                                background: theme.palette.mode === 'dark' ? theme.palette.secondary.main : theme.palette.secondary.dark,
+                                color: theme.palette.mode === 'dark' ? theme.palette.secondary.light : theme.palette.secondary.light
+                            }
+                        }}
+                        onClick={() => dispatch(openDrawer(!drawerOpen))}
+                        color="inherit"
+                    >
+                        <IconMenu2 stroke={1.5} size="20px" />
+                    </Avatar>
+                ) : null} */}
+            </Box>
+
+            {/* header search */}
+            {/* <SearchSection /> */}
+            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ flexGrow: 1 }} />
+
+            {/* mega-menu */}
+            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                {/* <MegaMenuSection /> */}
+            </Box>
+
+            {/* live customization & localization */}
+            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                {/* <LocalizationSection /> */}
+            </Box>
+
+            {/* notification & profile */}
+            {/* <NotificationSection /> */}
+
+            {layout === LAYOUT_CONST.VERTICAL_LAYOUT || (layout === LAYOUT_CONST.HORIZONTAL_LAYOUT && matchDownMd) ? (
                     <Avatar
                         variant="rounded"
                         sx={{
@@ -67,31 +108,13 @@ const Header = () => {
                         <IconMenu2 stroke={1.5} size="20px" />
                     </Avatar>
                 ) : null}
-            </Box>
-
-            {/* header search */}
-            <SearchSection />
-            <Box sx={{ flexGrow: 1 }} />
-            <Box sx={{ flexGrow: 1 }} />
-
-            {/* mega-menu */}
-            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                <MegaMenuSection />
-            </Box>
-
-            {/* live customization & localization */}
-            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                <LocalizationSection />
-            </Box>
-
-            {/* notification & profile */}
-            <NotificationSection />
+            
             <ProfileSection />
 
             {/* mobile header */}
-            <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+            {/* <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
                 <MobileSection />
-            </Box>
+            </Box> */}
         </>
     );
 };

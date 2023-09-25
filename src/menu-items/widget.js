@@ -5,13 +5,38 @@ import { FormattedMessage } from 'react-intl';
 import { useSelector } from 'store';
 
 // assets
-import { IconChartArcs, IconClipboardList, IconChartInfographic } from '@tabler/icons';
+import { IconChartArcs,
+         IconClipboardList,
+         IconChartInfographic,
+         IconPackage,
+         IconBuildingWarehouse,
+         IconAffiliate,
+         IconCheckupList,
+         IconShieldLock,
+         IconUsers,
+         IconReportAnalytics,
+         IconNotebook,
+         IconCalendarTime,
+         IconBuildingStore,
+         IconArmchair2  } from '@tabler/icons';
 
 const icons = {
     widget: IconChartArcs,
     statistics: IconChartArcs,
     data: IconClipboardList,
-    chart: IconChartInfographic
+    chart: IconChartInfographic,
+    IconPackage: IconPackage,
+    IconBuildingWarehouse: IconBuildingWarehouse,
+    IconAffiliate: IconAffiliate,
+    IconCheckupList: IconCheckupList,
+    IconShieldLock: IconShieldLock,
+    IconUsers: IconUsers,
+    IconReportAnalytics: IconReportAnalytics,
+    IconNotebook: IconNotebook,
+    IconCalendarTime: IconCalendarTime,
+    IconBuildingStore: IconBuildingStore,
+    IconArmchair2: IconArmchair2
+
 };
 
 // ==============================|| MENU ITEMS - API ||============================== //
@@ -22,14 +47,14 @@ export const Menu = () => {
     const SubChildrenLis = (subChildrenLis) =>
         subChildrenLis?.map((subList) => ({
             ...subList,
-            title: <FormattedMessage id={`${subList.title}`} />,
-            //icon: icons[subList.icon]
+            title: subList.title,
+            icon: icons[subList.icon]
         }));
 
     const menuItem = (subList) => {
         const list = {
             ...subList,
-            title: <FormattedMessage id={`${subList.title}`} />,
+            title: subList.title,
             icon: icons[subList.icon]
         };
 
@@ -45,7 +70,7 @@ export const Menu = () => {
 
     const menuList = {
         ...menu,
-        title: <FormattedMessage id={`${menu.title}`} />,
+        title: menu.title,
         icon: icons[menu.icon],
         children: ChildrenList
     };
