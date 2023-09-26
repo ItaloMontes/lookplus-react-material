@@ -5,7 +5,8 @@ var dashBoardPathAux = null;
 
 switch(configDummy.perfil.tipoPerfil) {
     case "1":
-        dashBoardPathAux = '/utils/util-typography';
+        dashBoardPathAux = '/dashboard/default';
+        // dashBoardPathAux = '/utils/util-typography';
       break;
     case "2":
         dashBoardPathAux = '/advance/snackbar';
@@ -14,7 +15,7 @@ switch(configDummy.perfil.tipoPerfil) {
         dashBoardPathAux = '/basic/accordion';
       break;
     default:
-        dashBoardPathAux = '/dashboard/default';
+        dashBoardPathAux = '/dashboard/default';        
   }
 
 export const DASHBOARD_PATH = dashBoardPathAux;
