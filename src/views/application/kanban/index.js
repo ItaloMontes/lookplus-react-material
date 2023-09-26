@@ -47,7 +47,6 @@ export default function KanbanPage() {
     useEffect(() => {
         // hide left drawer when email app opens
         dispatch(openDrawer(false));
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
@@ -60,7 +59,6 @@ export default function KanbanPage() {
         const storyOrder = dispatch(getUserStoryOrder());
 
         Promise.all([items, columns, columnOrder, profile, comments, story, storyOrder]).then(() => setLoading(false));
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (loading) return <Loader />;

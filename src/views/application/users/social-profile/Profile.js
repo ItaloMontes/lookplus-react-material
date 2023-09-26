@@ -40,7 +40,7 @@ const Profile = () => {
 
     React.useEffect(() => {
         getPost();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     const editPost = async (id, commentId) => {

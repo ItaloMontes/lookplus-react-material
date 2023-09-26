@@ -37,7 +37,7 @@ const CardStyle2 = () => {
 
     React.useEffect(() => {
         dispatch(getSimpleCards());
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     const [search, setSearch] = React.useState('');

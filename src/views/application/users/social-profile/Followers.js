@@ -26,7 +26,7 @@ const Followers = () => {
 
     React.useEffect(() => {
         dispatch(getFollowers());
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     const [search, setSearch] = React.useState('');

@@ -109,7 +109,7 @@ const Checkout = () => {
 
     useEffect(() => {
         dispatch(getAddresses());
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     const addBillingAddress = (addressNew) => {
@@ -127,7 +127,7 @@ const Checkout = () => {
 
     useEffect(() => {
         setValue(cart.checkout.step > 2 ? 2 : cart.checkout.step);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [cart.checkout.step]);
 
     const removeCartProduct = (id) => {

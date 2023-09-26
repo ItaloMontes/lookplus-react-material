@@ -87,7 +87,7 @@ const MailPage = () => {
         const drawerToggler = dispatch(openDrawer(false));
         const mailCall = dispatch(getMails());
         Promise.all([drawerToggler, mailCall]).then(() => setLoading(false));
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     const [filter, setFilter] = useState('all');

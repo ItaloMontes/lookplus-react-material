@@ -126,7 +126,7 @@ function CreateInvoice() {
     // calculates costs when order-details change
     useEffect(() => {
         getTotalAmounts();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [productsData]);
 
     // to delete row in order details

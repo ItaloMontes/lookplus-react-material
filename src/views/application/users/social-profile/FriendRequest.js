@@ -39,7 +39,7 @@ const FriendRequest = () => {
 
     React.useEffect(() => {
         dispatch(getFriendRequests());
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     let friendRequestResult = <></>;

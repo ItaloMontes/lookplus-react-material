@@ -112,7 +112,6 @@ const ProductsList = () => {
             dispatch(resetCart());
         }
 
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // filter
@@ -209,7 +208,6 @@ const ProductsList = () => {
 
     useEffect(() => {
         filterData();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [filter]);
 
     useEffect(() => {

@@ -246,7 +246,7 @@ const ProductList = () => {
 
     React.useEffect(() => {
         dispatch(getProducts());
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     const handleSearch = (event) => {

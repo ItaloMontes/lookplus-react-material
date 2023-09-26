@@ -18,7 +18,6 @@ export default function ThemeCustomization({ children }) {
 
     const theme = useMemo(() => Palette(navType, presetColor), [navType, presetColor]);
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     const themeTypography = useMemo(() => Typography(theme, borderRadius, fontFamily), [theme, borderRadius, fontFamily]);
     const themeCustomShadows = useMemo(() => customShadows(navType, theme), [navType, theme]);
 

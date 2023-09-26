@@ -73,12 +73,12 @@ const ProductDetails = () => {
         if (cart.checkout.step > 2) {
             dispatch(resetCart());
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     useEffect(() => {
         dispatch(getProduct(id));
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [id]);
 
     if (loading) return <Loader />;

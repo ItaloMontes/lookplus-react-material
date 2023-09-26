@@ -29,7 +29,7 @@ const CardStyle3 = () => {
 
     React.useEffect(() => {
         dispatch(getProfileCards());
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     const [anchorEl, setAnchorEl] = React.useState(null);

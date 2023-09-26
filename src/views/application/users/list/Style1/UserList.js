@@ -45,7 +45,7 @@ const UserList = () => {
 
     React.useEffect(() => {
         dispatch(getUsersListStyle1());
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     return (

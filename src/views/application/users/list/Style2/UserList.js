@@ -47,7 +47,7 @@ const UserCard = () => {
 
     React.useEffect(() => {
         dispatch(getUsersListStyle2());
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     return (

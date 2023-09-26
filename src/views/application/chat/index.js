@@ -136,12 +136,12 @@ const ChatMainPage = () => {
         const userCall = dispatch(getUser(1));
         Promise.all([drawerToggler, userCall]).then(() => setLoading(false));
 
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     useEffect(() => {
         dispatch(getUserChats(user.name));
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [user]);
 
     // handle new message form

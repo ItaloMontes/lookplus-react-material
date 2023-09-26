@@ -22,7 +22,7 @@ const Gallery = () => {
 
     React.useEffect(() => {
         dispatch(getGallery());
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     let galleryResult = <></>;
