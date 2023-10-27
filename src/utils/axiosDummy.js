@@ -4,7 +4,7 @@
 
 import axios from 'axios';
 
-const axiosServices = axios.create({ baseURL: 'http://localhost:3000/' });
+const axiosServices = axios.create({ baseURL: '/' });
 
 // interceptor for http
 axiosServices.interceptors.response.use(
